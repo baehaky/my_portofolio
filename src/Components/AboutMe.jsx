@@ -4,7 +4,7 @@ import profile from "../assets/profile.png";
 
 export function AboutMe() {
   return (
-    <div id="aboutme" className="min-h-screen flex flex-col lg:flex-row justify-center gap-x-5 items-center">
+    <div id="aboutme" className="min-h-screen flex flex-col lg:flex-row justify-center items-center">
       <motion.CardHeader
     
         animate={{ x: -200 }}
@@ -23,7 +23,7 @@ export function AboutMe() {
       </motion.CardHeader>
       <motion.cardBody
         animate={{ x: 200 }}
-        className="mt-5 sm:w-[80%] lg:w-[50%] text-left lg:text-left sm:text-center"
+        className="mt-5 w-[90%] sm:w-[80%] lg:w-[50%] text-left lg:text-left sm:text-center"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, x: 20 }}
         transition={{ ease: "easeOut", duration: 2 }}

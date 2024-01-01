@@ -1,42 +1,56 @@
 import React from "react";
-import { Carousel } from "@material-tailwind/react";
+import {
+  Card,
+  CardBody,
+  Typography,
+  Button,
+  CardFooter,
+} from "@material-tailwind/react";
 
 export default function Project() {
+  function projet1() {
+    window.location.href = "https://egsys.netlify.app/";
+  }
+  function projet2() {
+    window.location.href = "https://main--alivefinal.netlify.app/";
+  }
   return (
     <section className="min-h-screen flex flex-col justify-center gap-x-5 items-center">
-      <h1 className="">My Project</h1>
-      <Carousel
-        className="rounded-xl"
-        navigation={({ setActiveIndex, activeIndex, length }) => (
-          <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-            {new Array(length).fill("").map((_, i) => (
-              <span
-                key={i}
-                className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                  activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
-                }`}
-                onClick={() => setActiveIndex(i)}
-              />
-            ))}
-          </div>
-        )}
-      >
-        <img
-          src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-          alt="image 1"
-          className="h-full w-full object-cover"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-          alt="image 2"
-          className="h-full w-full object-cover"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-          alt="image 3"
-          className="h-full w-full object-cover"
-        />
-      </Carousel>
+      <h1 className="text-3xl underline underline-offset-3 font-serif font-semibold hover:decoration-sky-500 mt-20">
+        My Project
+      </h1>
+      <div className="flex flex-wrap justify-center items-center gap-x-5">
+        <Card className="mt-6 w-[80%] md:w-[30%] animate-border bg-white bg-gradient-to-r from-cyan-500 via-light-blue-800 to-indigo-800 bg-[length:400%_400%] p-2">
+          <CardBody className="bg-white rounded-t-lg">
+            <Typography variant="h5" color="blue-gray" className="mb-2">
+              Seminar EggSys
+            </Typography>
+            <Typography>
+              This project is a website project to introduce a seminar event
+              that we have created. This seminar is part of the Seminars
+              Information System course.
+            </Typography>
+          </CardBody>
+          <CardFooter className="pt-0 bg-white rounded-b-lg">
+            <Button onClick={projet1}>See Website</Button>
+          </CardFooter>
+        </Card>
+        <Card className="mt-6 w-[80%] md:w-[30%] animate-border bg-white bg-gradient-to-r from-cyan-500 via-light-blue-800 to-indigo-800 bg-[length:400%_400%] p-2 ">
+          <CardBody className="bg-white rounded-t-lg">
+            <Typography variant="h5" color="blue-gray" className="mb-2">
+              ALIVE
+            </Typography>
+            <Typography>
+              This project is a website project to introduce a seminar event
+              originating from an organisation at Universitas Multimedia
+              Nusantara, Alive.
+            </Typography>
+          </CardBody>
+          <CardFooter className="pt-0 bg-white rounded-b-lg">
+            <Button onClick={projet2}>SEE WEBSITE</Button>
+          </CardFooter>
+        </Card>
+      </div>
     </section>
   );
 }
