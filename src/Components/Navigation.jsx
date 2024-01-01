@@ -38,7 +38,7 @@ export default function Navigation() {
         className="p-1 font-normal"
       >
         <a
-          href="#"
+          href="#project"
           className="flex items-center hover:text-black hover:underline hover:underline-offset-4"
         >
           Project

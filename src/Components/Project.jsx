@@ -15,7 +15,7 @@ export default function Project() {
     window.location.href = "https://main--alivefinal.netlify.app/";
   }
   return (
-    <section className="min-h-screen flex flex-col justify-center gap-x-5 items-center">
+    <section id="project" className="min-h-screen flex flex-col justify-center gap-x-5 items-center">
       <h1 className="text-3xl underline underline-offset-3 font-serif font-semibold hover:decoration-sky-500 mt-20">
         My Project
       </h1>
