@@ -24,22 +24,20 @@ export function AboutMe() {
         />
       </motion.CardHeader>
       <motion.cardBody
-        className="mt-5 text-left lg:text-left sm:text-center"
+        animate={{ x: 200 }}
+        className="mt-5"
         initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1}}
+        whileInView={{ opacity: 1, x:0}}
         transition={{ ease: "easeOut", duration: 2 }}
       >
         <Typography
           variant="h4"
           color="blue-gray"
-          className="mb-2 underline font-bold"
+          className="mb-2 underline font-bold text-center lg:text-left lg:mx-5"
         >
           Muhamad Baehaky
         </Typography>
-        <Typography
-          color="gray"
-          className="mb-4 font-normal mx-5"
-        >
+        <Typography color="gray" className="mb-4 font-normal mx-5 text-left lg:text-left sm:text-center">
           I am an Information System student at Multimedia Nusantara University,
           actively combining academic learning with practical expertise.
           Certified in Python programming and data visualization, I excel in
