@@ -74,7 +74,7 @@ export default function Navigation() {
   );
 
   return (
-    <header className="z-10 fixed max-h-[768px] w-[100%]">
+    <header className="z-50 fixed w-[100%]">
       <Navbar className="sticky top-0 z-50 h-max max-w-full rounded-none lg:px-8 lg:py-4">
         <div className="flex items-center justify-between lg:justify-center text-blue-gray-900">
           <Typography

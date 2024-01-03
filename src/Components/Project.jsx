@@ -32,7 +32,7 @@ export default function Project() {
             </Typography>
           </CardBody>
           <CardFooter className="pt-0 bg-white rounded-b-lg">
-            <Button onClick={projet1}>See Website</Button>
+            <Button onClick={projet1}>VIEW WEBSITE</Button>
           </CardFooter>
         </Card>
         <Card className="mt-6 w-[80%] md:w-[30%] animate-border bg-white bg-gradient-to-r from-cyan-500 via-light-blue-800 to-indigo-800 bg-[length:400%_400%] p-2 ">
@@ -47,7 +47,7 @@ export default function Project() {
             </Typography>
           </CardBody>
           <CardFooter className="pt-0 bg-white rounded-b-lg">
-            <Button onClick={projet2}>SEE WEBSITE</Button>
+            <Button onClick={projet2}>VIEW WEBSITE</Button>
           </CardFooter>
         </Card>
       </div>

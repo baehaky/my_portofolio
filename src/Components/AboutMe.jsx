@@ -4,9 +4,11 @@ import profile from "../assets/profile.png";
 
 export function AboutMe() {
   return (
-    <div id="aboutme" className="min-h-screen flex flex-col lg:flex-row justify-center items-center">
+    <div
+      id="aboutme"
+      className="flex flex-col min-h-screen lg:flex-row justify-center items-center"
+    >
       <motion.CardHeader
-    
         animate={{ x: -200 }}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -22,10 +24,9 @@ export function AboutMe() {
         />
       </motion.CardHeader>
       <motion.cardBody
-        animate={{ x: 200 }}
-        className="mt-5 w-[90%] sm:w-[80%] lg:w-[50%] text-left lg:text-left sm:text-center"
+        className="mt-5 text-left lg:text-left sm:text-center"
         initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1, x: 20 }}
+        whileInView={{ opacity: 1}}
         transition={{ ease: "easeOut", duration: 2 }}
       >
         <Typography
@@ -37,7 +38,7 @@ export function AboutMe() {
         </Typography>
         <Typography
           color="gray"
-          className="mb-4 font-normal w-[90%] lg:w-[90%]"
+          className="mb-4 font-normal mx-5"
         >
           I am an Information System student at Multimedia Nusantara University,
           actively combining academic learning with practical expertise.
@@ -47,7 +48,7 @@ export function AboutMe() {
           dynamic skill set and ongoing education to contribute effectively to
           innovative projects.
         </Typography>
-        <div className="flex flex-wrap w-[90%] gap-2">
+        <div className="flex flex-wrap gap-2 mx-5">
           <span className="animate-border inline-block rounded-full bg-gradient-to-r from-cyan-500 via-light-blue-800 to-indigo-800 bg-[length:400%_400%] p-1">
             <span className="block rounded-full bg-slate-900 px-5 py-2 font-bold text-black bg-white">
               HTML
