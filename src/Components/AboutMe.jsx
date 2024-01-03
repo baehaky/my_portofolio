@@ -24,10 +24,10 @@ export function AboutMe() {
         />
       </motion.CardHeader>
       <motion.cardBody
-        animate={{ x: 200 }}
+        animate={{ y: 100 }}
         className="mt-5"
         initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1, x:0}}
+        whileInView={{ opacity: 1, y:0}}
         transition={{ ease: "easeOut", duration: 2 }}
       >
         <Typography
