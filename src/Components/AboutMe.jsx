@@ -9,9 +9,9 @@ export function AboutMe() {
       className="flex flex-col min-h-screen lg:flex-row justify-center items-center"
     >
       <motion.CardHeader
-        animate={{ x: -200 }}
+        animate={{ y: 50 }}
         initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeOut", duration: 2 }}
         shadow={true}
         floated={false}
