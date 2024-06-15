@@ -11,7 +11,7 @@ export function AboutMe() {
       <motion.CardHeader
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1}}
-        transition={{ ease: "easeIn", duration: 3 }}
+        transition={{ ease: "easeIn", duration: 2 }}
         shadow={true}
         floated={false}
         className="rounded-full w-[50%] sm:w-[25%] lg:w-[20%] animate-border bg-white bg-gradient-to-r from-cyan-500 via-light-blue-800 to-indigo-800 bg-[length:400%_400%] flex justify-center items-center p-1"

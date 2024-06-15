@@ -6,8 +6,7 @@ export default function Footer() {
         <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
           <li>
             <Typography
-              as="a"
-              href="#"
+              href="#about"
               color="blue-gray"
               className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
             >
@@ -16,8 +15,7 @@ export default function Footer() {
           </li>
           <li>
             <Typography
-              as="a"
-              href="#"
+              href="#project"
               color="blue-gray"
               className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
             >
